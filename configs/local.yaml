@@ -8,5 +8,8 @@ training:
   lambda_orpo: 0.1
   max_length: 512
   batch_size: 2
+  steps: 25
+  learning_rate: 0.5
 evaluation:
   regression_prompts: docs/regression_prompts.md
+  validation_ratio: 0.2

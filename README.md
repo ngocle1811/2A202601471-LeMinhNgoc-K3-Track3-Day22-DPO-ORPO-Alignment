@@ -42,6 +42,12 @@ pip install -e '.[dev,train]'
 | 100-115 min | Implement evaluation and report | `pref-lab evaluate --config configs/local.yaml` |
 | 115-120 min | One-minute demo | `cat outputs/metrics.json` |
 
+The dependency-free CPU training demonstration can be run with:
+
+```bash
+pref-lab train --config configs/local.yaml
+```
+
 ## Repository layout
 
 ```text
@@ -55,9 +61,9 @@ tests/                  Unit tests for student work
 
 ## Production checklist
 
-- [ ] Dataset schema validated.
-- [ ] Train/eval split by prompt, not by row.
+- [x] Dataset schema validated.
+- [x] Train/eval split by prompt, not by row.
 - [ ] Config committed; generated artifacts ignored.
-- [ ] Metrics saved as JSON.
+- [x] Metrics saved as JSON.
 - [ ] Safety regression prompts run before/after training.
-- [ ] Data card updated.
+- [x] Data card updated.
